@@ -1,5 +1,5 @@
 [project]
-name = "usb-telemetry"
+name = "defy-battery-telemetry"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"

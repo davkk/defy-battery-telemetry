@@ -17,5 +17,8 @@ for side in ["left", "right"]:
     ser.write(f"wireless.battery.{side}.level\n".encode("utf-8"))
     print(int(read(ser)), end=" ")
 
-ser.write("wireless.battery.left.status\n".encode("utf-8"))
-print(int(read(ser)))
+for side in ["left", "right"]:
+    ser.write(f"wireless.battery.{side}.status\n".encode("utf-8"))
+    print(int(read(ser)), end=" ")
+
+print()
